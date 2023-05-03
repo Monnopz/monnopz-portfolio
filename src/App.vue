@@ -1,5 +1,5 @@
 <template>
-  <router-view/>
+  <div class="font-poppins"><router-view/></div>
 </template>
 
 <script>

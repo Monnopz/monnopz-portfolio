@@ -1,9 +1,7 @@
 <template>
-  <div class="font-poppins">
-    <!-- <Navbar /> -->
-    <router-view></router-view>
-    <!-- <Footer /> -->
-  </div>
+  <!-- <Navbar /> -->
+  <router-view></router-view>
+  <!-- <Footer /> -->
 </template>
 
 <script>
