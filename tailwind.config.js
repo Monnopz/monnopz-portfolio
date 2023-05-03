@@ -6,7 +6,7 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      outfit: ['Poppins', 'sans-serif'],
+      poppins: ['Poppins', 'sans-serif'],
     },
   },
   plugins: [],
