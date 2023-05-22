@@ -6,7 +6,7 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      poppins: ['Poppins', 'sans-serif'],
+      WixMadeforDisplay: ['Wix Madefor Display', 'sans-serif'],
     },
   },
   plugins: [],

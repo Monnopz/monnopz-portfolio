@@ -1,17 +1,17 @@
 <template>
-  <!-- <Navbar /> -->
+  <Navbar />
   <router-view></router-view>
-  <!-- <Footer /> -->
+  <Footer />
 </template>
 
 <script>
-// import { defineAsyncComponent } from 'vue'
+import { defineAsyncComponent } from 'vue'
 
 export default {
     name: 'MainLayout',
     components: {
-        // Navbar: defineAsyncComponent(() => import('../components/Navbar.vue')),
-        // Footer: defineAsyncComponent(() => import('../components/Footer.vue')),
+        Navbar: defineAsyncComponent(() => import('../components/Navbar.vue')),
+        Footer: defineAsyncComponent(() => import('../components/Footer.vue')),
     }
 }
 </script>
