@@ -1,5 +1,5 @@
 <template>
-  <div class="font-poppins"><router-view/></div>
+  <div class="h-full bg-[#eff6ee] font-WixMadeforDisplay"><router-view/></div>
 </template>
 
 <script>
