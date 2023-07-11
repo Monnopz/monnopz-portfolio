@@ -8,9 +8,9 @@
           <span class="2xl:text-[124px] xl:text-[99px] lg:text-[61px] text-[46px] mr-16">Guillermo Sámano</span><br>
           <span class="2xl:text-[112px] xl:text-[87px] lg:text-[49px] text-[34px] ml-28">te da la bienvenida...</span>
         </div> -->
-        <div class="pt-16">
-          <span class="text-[54px] mr-16">Guillermo Sámano</span><br>
-          <span class="text-[34px] ml-28">te da la bienvenida...</span>
+        <div class="h-4/5 flex flex-col justify-center">
+          <span class="-my-6 text-[54px] sm:text-[64px] lg:text-[94px] 2xl:text-[124px] sm:mr-16 lg:mr-28 2xl:mr-36">MONNOPZ</span><br>
+          <span class="text-[24px] sm:text-[34px] lg:text-[44px] 2xl:text-[64px] sm:ml-28 lg:ml-40 2xl:ml-52">te da la bienvenida</span>
         </div>
       </div>
   </div>
