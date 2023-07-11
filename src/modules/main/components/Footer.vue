@@ -1,6 +1,6 @@
 <template>
   <div class="bg-[#273043] text-[#eff6ee]/[0.94] text-center py-3">
-    <span>Guillermo Sámano — 2023</span>
+    <div><span class="font-semibold">Monnopz</span> — 2023</div>
   </div>
 </template>
 
