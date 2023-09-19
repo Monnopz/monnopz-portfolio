@@ -46,18 +46,41 @@
 </template>
 
 <script>
+// sm	640px	@media (min-width: 640px) { ... }
+// md	768px	@media (min-width: 768px) { ... }
+// lg	1024px	@media (min-width: 1024px) { ... }
+// xl	1280px	@media (min-width: 1280px) { ... }
+// 2xl	1536px	@media (min-width: 1536px) { ... }
 export default {
     name: 'Navbar',
     data(){
       return{
-        isHamburgerMenuOpen: false
+        isHamburgerMenuOpen: false,
+        width: document.documentElement.clientWidth,
+        height: document.documentElement.clientHeight
       }
+    },
+    mounted() {
+      this.screenWidth = window.innerWidth;
+      // event type, listener
+      // Cuando se este cambiando el tamaño, se ejecutará la funcion
+      window.addEventListener('resize', this.getDimensions); // Se agrega un listener para obtener las medidas de la pantalla, debido a que Tailwind no ofrece breakpoints reactivos
+    },
+    unmounted() {
+      window.removeEventListener('resize', this.getDimensions);
     },
     components: {
     },
     methods: {
       openHamburgerMenu(){
         this.isHamburgerMenuOpen = !this.isHamburgerMenuOpen;
+      },
+      getDimensions() {
+        this.width = document.documentElement.clientWidth;
+        this.height = document.documentElement.clientHeight;
+        if( this.isHamburgerMenuOpen && this.width > 640 ) { // > 640px aplica sm breakpoint
+          this.openHamburgerMenu()
+        }
       }
     }
 }
