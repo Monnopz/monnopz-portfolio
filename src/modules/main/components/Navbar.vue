@@ -27,9 +27,9 @@
           <div class="hidden sm:block">
             <div class="flex">
               <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-              <a href="#" class="h-16 bg-[#eff6ee]/[0.94] text-[#273043] px-6 py-5 text-sm font-medium rounded-b-[15px]" aria-current="page">INICIO</a>
-              <a href="#" class="h-16 text-gray-300 hover:bg-gray-700 hover:[#eff6ee] px-6 py-5 text-sm font-medium rounded-b-[15px]">PORTAFOLIO</a>
-              <a href="#" class="h-16 text-gray-300 hover:bg-gray-700 hover:[#eff6ee] px-6 py-5 text-sm font-medium rounded-b-[15px]">CONTACTO</a>
+              <a href="#" class="h-16 bg-[#eff6ee]/[0.94] text-[#273043] px-6 py-5 text-sm font-medium tracking-[1.6px] rounded-b-[15px]" aria-current="page">INICIO</a>
+              <a href="#" class="h-16 text-gray-300 hover:bg-gray-700 hover:[#eff6ee] px-6 py-5 text-sm font-medium tracking-[1.6px] rounded-b-[15px]">PROYECTOS</a>
+              <a href="#" class="h-16 text-gray-300 hover:bg-gray-700 hover:[#eff6ee] px-6 py-5 text-sm font-medium tracking-[1.6px] rounded-b-[15px]">CONTACTO</a>
             </div>
           </div>
         </div>
@@ -38,9 +38,9 @@
       <!-- Mobile menu, show/hide based on menu state. -->
       <div :class="[isHamburgerMenuOpen ? 'opacity-100 block' : 'opacity-0 hidden', 'mx-2']" class="transition-all duration-400 ease-in-out" id="mobile-menu">
         <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-        <a href="#" class="text-center bg-[#eff6ee]/[0.94] text-[#273043] block px-3 py-2 text-base font-medium rounded-[15px]" aria-current="page">INICIO</a>
-        <a href="#" class="text-center text-gray-300 block px-3 py-2 text-base font-medium rounded-[15px]">PORTAFOLIO</a>
-        <a href="#" class="text-center text-gray-300 block px-3 py-2 text-base font-medium rounded-[15px]">CONTACTO</a>
+        <a href="#" class="text-center bg-[#eff6ee]/[0.94] text-[#273043] block px-3 py-2 text-base font-medium tracking-[1.6px] rounded-[15px]" aria-current="page">INICIO</a>
+        <a href="#" class="text-center text-gray-300 block px-3 py-2 text-base font-medium tracking-[1.6px] rounded-[15px]">PROYECTOS</a>
+        <a href="#" class="text-center text-gray-300 block px-3 py-2 text-base font-medium tracking-[1.6px] rounded-[15px]">CONTACTO</a>
       </div>
     </nav>
 </template>
