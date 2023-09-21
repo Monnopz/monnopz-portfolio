@@ -27,8 +27,10 @@
           <div class="hidden sm:block">
             <div class="flex">
               <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-              <a href="#" class="h-16 bg-[#eff6ee]/[0.94] text-[#273043] px-6 py-5 text-sm font-medium tracking-[1.6px] rounded-b-[15px]" aria-current="page">INICIO</a>
-              <a href="#" class="h-16 text-gray-300 hover:bg-gray-700 hover:[#eff6ee] px-6 py-5 text-sm font-medium tracking-[1.6px] rounded-b-[15px]">PROYECTOS</a>
+              <router-link :active-class="$route.hash === '#main' ? 'bg-[#eff6ee]/[0.94] text-[#273043]' : 'text-gray-300 hover:bg-gray-700 hover:[#eff6ee]'" class="h-16 px-6 py-5 text-sm font-medium tracking-[1.6px] rounded-b-[15px]" aria-current="page" to="/#main">INICIO</router-link>
+              <router-link :active-class="$route.hash === '#proyects' ? 'bg-[#eff6ee]/[0.94] text-[#273043]' : 'text-gray-300 hover:bg-gray-700 hover:[#eff6ee]'" class="h-16 px-6 py-5 text-sm font-medium tracking-[1.6px] rounded-b-[15px]" to="/#proyects">PROYECTOS</router-link>
+              <!-- <a href="#main" class="h-16 bg-[#eff6ee]/[0.94] text-[#273043] px-6 py-5 text-sm font-medium tracking-[1.6px] rounded-b-[15px]" aria-current="page">INICIO</a>
+              <a href="#proyects" class="h-16 text-gray-300 hover:bg-gray-700 hover:[#eff6ee] px-6 py-5 text-sm font-medium tracking-[1.6px] rounded-b-[15px]">PROYECTOS</a> -->
               <a href="#" class="h-16 text-gray-300 hover:bg-gray-700 hover:[#eff6ee] px-6 py-5 text-sm font-medium tracking-[1.6px] rounded-b-[15px]">CONTACTO</a>
             </div>
           </div>
@@ -38,8 +40,10 @@
       <!-- Mobile menu, show/hide based on menu state. -->
       <div :class="[isHamburgerMenuOpen ? 'opacity-100 block' : 'opacity-0 hidden', 'mx-2']" class="transition-all duration-400 ease-in-out" id="mobile-menu">
         <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-        <a href="#" class="text-center bg-[#eff6ee]/[0.94] text-[#273043] block px-3 py-2 text-base font-medium tracking-[1.6px] rounded-[15px]" aria-current="page">INICIO</a>
-        <a href="#" class="text-center text-gray-300 block px-3 py-2 text-base font-medium tracking-[1.6px] rounded-[15px]">PROYECTOS</a>
+        <router-link :active-class="$route.hash === '#main' ? 'bg-[#eff6ee]/[0.94] text-[#273043]' : 'text-gray-300'" class="text-center block px-3 py-2 text-base font-medium tracking-[1.6px] rounded-[15px]" aria-current="page" to="/#main">INICIO</router-link>
+        <router-link :active-class="$route.hash === '#proyects' ? 'bg-[#eff6ee]/[0.94] text-[#273043]' : 'text-gray-300'" class="text-center block px-3 py-2 text-base font-medium tracking-[1.6px] rounded-[15px]" to="/#proyects">PROYECTOS</router-link>
+        <!-- <a href="#" class="text-center bg-[#eff6ee]/[0.94] text-[#273043] block px-3 py-2 text-base font-medium tracking-[1.6px] rounded-[15px]" aria-current="page">INICIO</a>
+        <a href="#" class="text-center text-gray-300 block px-3 py-2 text-base font-medium tracking-[1.6px] rounded-[15px]">PROYECTOS</a> -->
         <a href="#" class="text-center text-gray-300 block px-3 py-2 text-base font-medium tracking-[1.6px] rounded-[15px]">CONTACTO</a>
       </div>
     </nav>
