@@ -103,7 +103,7 @@ export default {
             },
             {
               id: 3,
-              logoURL: 'https://www.svgrepo.com/show/327408/logo-vercel.svg',
+              logoURL: 'https://static-00.iconduck.com/assets.00/vercel-icon-512x449-3422jidz.png',
               logoALT: 'Vercel Logo IMG',
               name: 'Vercel'
             }
