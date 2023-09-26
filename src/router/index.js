@@ -17,20 +17,20 @@ const routes = [
 
 const router = createRouter({
   history: createWebHistory(),
-  routes,
-  scrollBehavior(to, from, savedPosition) {
-    // always scroll 10px above the element #main
-    if (to.hash) {
-      return {
-        // could also be
-        // el: document.getElementById('main'),
-        // el: '#main',
-        el: to.hash,
-        top: 64,
-        behavior: 'smooth',
-      }
-    }
-  }
+  routes
+  // scrollBehavior(to, from, savedPosition) {
+  //   // always scroll 10px above the element #main
+  //   if (to.hash) {
+  //     return {
+  //       // could also be
+  //       // el: document.getElementById('main'),
+  //       // el: '#main',
+  //       el: to.hash,
+  //       top: 64,
+  //       behavior: 'smooth',
+  //     }
+  //   }
+  // }
 })
 
 router.beforeEach((to, from, next) => {
