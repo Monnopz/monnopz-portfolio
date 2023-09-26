@@ -32,7 +32,8 @@
               <!-- <a href="#main" :class="[$route.hash === '#main' ? 'bg-[#eff6ee]/[0.94] text-[#273043]' : 'text-gray-300 hover:bg-gray-700 hover:[#eff6ee]', 'h-16 px-6 py-5 text-sm font-medium tracking-[1.6px] rounded-b-[15px]']" aria-current="page" >INICIO</a>
               <a href="#proyects" :class="[$route.hash === '#proyects' ? 'bg-[#eff6ee]/[0.94] text-[#273043]' : 'text-gray-300 hover:bg-gray-700 hover:[#eff6ee]', 'h-16 px-6 py-5 text-sm font-medium tracking-[1.6px] rounded-b-[15px]']" aria-current="page" >PROYECTOS</a> -->
               <span @click="navigateToSection(mainSection, 'main')" :class="[currentSelectedSection === 'main' ? 'bg-[#eff6ee]/[0.94] text-[#273043]' : 'text-gray-300 hover:bg-gray-700 hover:[#eff6ee]', 'cursor h-16 px-6 py-5 text-sm font-medium tracking-[1.6px] rounded-b-[15px]']" aria-current="page" >INICIO</span>
-              <span @click="navigateToSection(proyectsSection, 'proyects')" :class="[currentSelectedSection === 'proyects' ? 'bg-[#eff6ee]/[0.94] text-[#273043]' : 'text-gray-300 hover:bg-gray-700 hover:[#eff6ee]', 'cursor h-16 px-6 py-5 text-sm font-medium tracking-[1.6px] rounded-b-[15px]']" aria-current="page" >PROYECTOS</span>
+              <span @click="navigateToSection(proyectsSection, 'proyects')" :class="[currentSelectedSection === 'proyects' ? 'bg-[#eff6ee]/[0.94] text-[#273043]' : 'text-gray-300 hover:bg-gray-700 hover:[#eff6ee]', 'cursor h-16 px-6 py-5 text-sm font-medium tracking-[1.6px] rounded-b-[15px]']" >PROYECTOS</span>
+              <span @click="navigateToSection(contactSection, 'contact')" :class="[currentSelectedSection === 'contact' ? 'bg-[#eff6ee]/[0.94] text-[#273043]' : 'text-gray-300 hover:bg-gray-700 hover:[#eff6ee]', 'cursor h-16 px-6 py-5 text-sm font-medium tracking-[1.6px] rounded-b-[15px]']" >CONTACTO</span>
             </div>
           </div>
         </div>
@@ -42,7 +43,8 @@
       <div :class="[isHamburgerMenuOpen ? 'opacity-100 block' : 'opacity-0 hidden', 'mx-2 pb-4']" class="transition-all duration-400 ease-in-out" id="mobile-menu">
         <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
         <span @click="navigateToSection(mainSection, 'main')" :class="[currentSelectedSection === 'main' ? 'bg-[#eff6ee]/[0.94] text-[#273043]' : 'text-gray-300', 'text-center block px-3 py-2 text-base font-medium tracking-[1.6px] rounded-[15px]']" aria-current="page" >INICIO</span>
-        <span @click="navigateToSection(proyectsSection, 'proyects')" :class="[currentSelectedSection === 'proyects' ? 'bg-[#eff6ee]/[0.94] text-[#273043]' : 'text-gray-300', 'text-center block px-3 py-2 text-base font-medium tracking-[1.6px] rounded-[15px]']" aria-current="page" >PROYECTOS</span>
+        <span @click="navigateToSection(proyectsSection, 'proyects')" :class="[currentSelectedSection === 'proyects' ? 'bg-[#eff6ee]/[0.94] text-[#273043]' : 'text-gray-300', 'text-center block px-3 py-2 text-base font-medium tracking-[1.6px] rounded-[15px]']" >PROYECTOS</span>
+        <span @click="navigateToSection(contactSection, 'contact')" :class="[currentSelectedSection === 'contact' ? 'bg-[#eff6ee]/[0.94] text-[#273043]' : 'text-gray-300', 'text-center block px-3 py-2 text-base font-medium tracking-[1.6px] rounded-[15px]']" >CONTACTO</span>
       </div>
     </nav>
 </template>
@@ -62,6 +64,7 @@ export default {
         height: document.documentElement.clientHeight,
         mainSection: document.getElementById('main'),
         proyectsSection: document.getElementById('proyects'),
+        contactSection: document.getElementById('contact'),
         currentSelectedSection: 'main' // Indicará la seccion seleccionada por su nombre
       }
     },
