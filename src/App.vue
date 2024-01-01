@@ -1,5 +1,5 @@
 <template>
-  <div class="h-full bg-[#eff6ee] font-WixMadeforDisplay"><router-view/></div>
+  <div class="h-full bg-[#fff] font-WixMadeforDisplay"><router-view/></div>
 </template>
 
 <script>

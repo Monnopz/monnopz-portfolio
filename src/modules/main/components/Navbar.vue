@@ -19,12 +19,15 @@
             </svg>
           </button>
         </div>
-        <div class="flex flex-1 justify-end">
+        <div class="flex flex-1">
+          <div class="w-full flex items-center justify-center sm:justify-start">
+            <span class="cursor text-[#fff] sm:px-6 font-bold tracking-[3.6px] sm:tracking-[2.1px] lg:tracking-[2.6px] 2xl:tracking-[3.8px] text-[30px] sm:text-[18px] lg:text-[22px] 2xl:text-[32px]">MONNOPZ</span>
+          </div>
           <!-- <div class="flex flex-shrink-0 items-center">
             <img class="block h-8 w-auto lg:hidden" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" alt="Your Company">
             <img class="hidden h-8 w-auto lg:block" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" alt="Your Company">
           </div> -->
-          <div class="hidden sm:block">
+          <div class="justify-end hidden sm:block">
             <div class="flex">
               <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
               <!-- <router-link :active-class="$route.hash === '#main' ? 'bg-[#eff6ee]/[0.94] text-[#273043]' : 'text-gray-300 hover:bg-gray-700 hover:[#eff6ee]'" class="h-16 px-6 py-5 text-sm font-medium tracking-[1.6px] rounded-b-[15px]" aria-current="page" to="/#main">INICIO</router-link> -->
