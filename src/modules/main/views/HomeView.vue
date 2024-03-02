@@ -14,6 +14,7 @@
            <div>— Guillermo Sámano</div>
           </p>
           <!-- <span class="-mt-2 lg:-mt-6 2xl:-mt-8 tracking-[2.6px] sm:tracking-[4.5px] lg:tracking-[5.8px] 2xl:tracking-[6.8px] text-[22px] sm:text-[38px] lg:text-[49px] 2xl:text-[57px]"></span> -->
+          <!-- <img class="h-96 w-96" src="https://res.cloudinary.com/flutter-app-camera/image/upload/v1706211309/FOTO2_PNG_OUTERGLOW_wfeyih.png" loading="lazy" alt="meOuterGlow1"> -->
         </div>
       </div>
       <!-- El siguiente div agrega un degradado. Se agrega en este punto para que no estorbe con la posicion en pixeles de la navegacion al dar clic en el menu -->
@@ -54,11 +55,11 @@
               <p class="font-bold uppercase tracking-[1.9px] sm:tracking-[2.1px] lg:tracking-[2.6px] 2xl:tracking-[3.8px] text-[16px] sm:text-[18px] lg:text-[22px] 2xl:text-[32px] mt-6 sm:mt-7 lg:mt-8 2xl:mt-12">Front End Developer</p>
               <div class="tracking-[1.6px] sm:tracking-[1.9px] lg:tracking-[2.4px] 2xl:tracking-[3.6px] text-[14px] sm:text-[16px] lg:text-[20px] 2xl:text-[30px]">
                 <p class="my-7 sm:my-8 lg:my-10 2xl:my-14 text-center lg:text-justify">
-                  Tengo +2 años de experiencia desarrollando proyectos con HTML5, CSS3, Javascript, ES6, VueJs, Vuetify, Tailwind CSS. <br>
-                  Utilizo RestAPI para consumo de datos y los manipulo con JSON. <br>
-                  Trabajo con los sistemas de control de versiones Git y GitHub. <br>
-                  Actualmente estoy estudiando algunos cursos y codificando pequeños proyectos porque me gusta estar aprendiendo.</p>
-                <p class="my-7 sm:my-8 lg:my-10 2xl:my-14 text-center lg:text-justify">Canales principales para comunicación directa conmigo.</p>
+                  Con +2 años de experiencia desarrollando proyectos con HTML5, CSS3, Javascript, ES6, VueJs, Vuetify, Tailwind CSS. <br>
+                  Realizo consumo y manipulación de datos con RestAPI y JSON. <br>
+                  Utilizo los sistemas de control de versiones Git y GitHub. <br>
+                  Estoy aprendiendo con recursos online y codificando pequeños proyectos, de los cuales algunos tienes la posibilidad de conocerlos aquí. </p>
+                <p class="my-7 sm:my-8 lg:my-10 2xl:my-14 text-center lg:text-justify">Para más información, te dejo mis redes profesionales</p>
               </div>
               <div class="grid grid-cols-2 sm:grid-cols-4 lg:mb-8 2xl:mb-10">
                 <button v-for="contact in contactButtons" :key="contact.id" role="link" @click="contact.action" class="mx-auto lg:h-16 lg:w-16 flex items-center justify-center lg:rounded-lg lg:border-2 border-[#eff6ee] lg:hover:bg-[#87A5E8]/[0.85]" type="button" :aria-label="contact.ariaLabel">
@@ -116,7 +117,7 @@ export default {
           id: 2,
           name: 'Big Movie DB',
           description: ' es un proyecto personal que consiste en mostrar los principales estrenos de películas y al seleccionar alguna en específico permite conocer más detalles sobre su producción como casting, fecha de estreno, rating, etcétera.',
-          proyectImgURL: 'https://res.cloudinary.com/flutter-app-camera/image/upload/v1689095598/Screenshot_2023-07-11_111303_tocena.png',
+          proyectImgURL: 'https://res.cloudinary.com/flutter-app-camera/image/upload/v1709397870/BigMovieDB_wls5ds.png',
           proyectImgALT: 'Big Movie DB IMG',
           stack: [
             {
@@ -139,6 +140,34 @@ export default {
             }
           ],
           goToProyectURL: 'https://proyect-movies-web.vercel.app/'
+        },
+        {
+          id: 3,
+          name: 'Tic Tac Toe',
+          description: ' es un proyecto personal que consiste en el popular juego, conocido también como el "juego del gato". Compite con la computadora para vencerla y sacar el mejor puntaje. ',
+          proyectImgURL: 'https://res.cloudinary.com/flutter-app-camera/image/upload/v1709397100/ProyectTicTacToe_ggljaw.png',
+          proyectImgALT: 'Tic Tac Toe IMG',
+          stack: [
+            {
+              id: 1,
+              logoURL: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/2367px-Vue.js_Logo_2.svg.png',
+              logoALT: 'Vue Logo IMG',
+              name: 'Vue3'
+            },
+            {
+              id: 2,
+              logoURL: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/320px-Tailwind_CSS_Logo.svg.png',
+              logoALT: 'Tailwind CSS IMG',
+              name: 'Tailwind CSS'
+            },
+            {
+              id: 3,
+              logoURL: 'https://static-00.iconduck.com/assets.00/vercel-icon-512x449-3422jidz.png',
+              logoALT: 'Vercel Logo IMG',
+              name: 'Vercel'
+            }
+          ],
+          goToProyectURL: 'https://proyect-tictactoe-web.vercel.app/'
         }
       ],
       contactButtons: [
